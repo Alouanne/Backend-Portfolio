@@ -70,7 +70,7 @@ public class SpotifyController {
         String accessToken = (String) response.getBody().get("access_token");
 
         // Redirect to your HTML page with the access token as a URL param (or hash)
-        String redirectUrl = "http://localhost:63342/alouanne.github.io/OnlineHitster/Hitster.html?access_token=" + accessToken + "&state=" + URLEncoder.encode(state, StandardCharsets.UTF_8);
+        String redirectUrl = "http:/aleannecamire.com/OnlineHitster/Hitster.html?access_token=" + accessToken + "&state=" + URLEncoder.encode(state, StandardCharsets.UTF_8);
 
         return ResponseEntity.status(HttpStatus.FOUND)
                 .location(URI.create(redirectUrl))
