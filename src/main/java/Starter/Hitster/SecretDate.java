@@ -8,8 +8,4 @@ public class SecretDate {
     public static String getClientId() {
       return System.getenv("CLIENT_ID");
     }
-    public static String getRedirectUri() {
-      return System.getenv("REDIRECT_URL  ");
-
-    }
 }
