@@ -17,7 +17,7 @@
     </parent>
 
     <properties>
-        <java.version>19</java.version> <!-- Adjust as needed -->
+        <java.version>17</java.version> <!-- Adjust as needed -->
     </properties>
 
     <dependencies>
