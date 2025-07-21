@@ -24,7 +24,7 @@ public class SpotifyController {
   @GetMapping("/auth/spotify")
   public ResponseEntity<Void> redirectToSpotify(@RequestParam String state) {
     String clientId = SecretDate.getClientId();
-    String redirectUri = "http://localhost:8080/callback";
+    String redirectUri = "https://backend-portfolio-a7jj.onrender.com/callback";
 
     String scope = "user-read-playback-state user-modify-playback-state playlist-read-private streaming";
     String authUrl = "https://accounts.spotify.com/authorize" +
@@ -43,7 +43,7 @@ public class SpotifyController {
 
     String clientId = SecretDate.getClientId();
     String clientSecret = SecretDate.getClientSecret();
-    String redirectUri = "http://localhost:8080/callback";
+    String redirectUri = "https://backend-portfolio-a7jj.onrender.com/callback";
 
     String credentials = clientId + ":" + clientSecret;
     String encodedCredentials = Base64.getEncoder()
